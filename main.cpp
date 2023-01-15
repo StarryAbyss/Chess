@@ -1,8 +1,7 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<bits/stdc++.h>
 #include<windows.h>
-#include<time.h>
-#include<string.h> 
+#include<conio.h>
+using namespace std;
 void color(short x){
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),x);
 }
@@ -42,7 +41,7 @@ int n,p,t,m[11],x[11],y[11],st,pr,sm,pl,sp,ra,stp[11],sh[11],dh[11][101],sum;
 char c1[11][101]={"得到500金币","得到800金币","得到1000金币","使一个对手减少500金币","使一个对手减少800金币","每个对手给你500金币"};
 char c2[11][101]={"失去500金币","失去800金币","失去1000金币","给一个对手500金币","给一个对手800金币","给每个对手500金币"};
 char ch,p1[101],p2[101];
-_Bool flag,flag2,flag3;
+bool flag,flag2,flag3;
 void find(int xx,int yy){
 	int cnt=0;
 	for(int i=1;i<=p;i++){
