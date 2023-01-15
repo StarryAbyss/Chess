@@ -11,6 +11,12 @@ void clear_screen(int x,int y){
     CONSOLE_CURSOR_INFO info={1,0};
     SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE),&info);
 }
+void deal();
+void desktop();
+void find(int xx,int yy);
+void game();
+void rule();
+void solve();
 int mp[101][101]={
 	{7,1,1,1,1,4,1,1,3,1,6},
 	{1,0,0,0,0,0,0,0,0,0,1},
